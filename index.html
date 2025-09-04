@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- You might want to include an icon library like Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="chat-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn">
+                    <span class="material-symbols-outlined">add</span> New Chat
+                </button>
+            </div>
+            <div class="conversation-list">
+                <!-- Conversation history will be loaded here -->
+            </div>
+            <div class="sidebar-footer">
+                <button class="sidebar-btn">
+                    <span class="material-symbols-outlined">history</span> History
+                </button>
+                <button class="sidebar-btn">
+                    <span class="material-symbols-outlined">settings</span> Settings
+                </button>
+            </div>
+        </aside>
+        <main class="chat-area">
+            <h1 class="welcome-message">Welcome to your Gemini AI Chat!</h1>
+            <div class="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="input-area">
+                <textarea id="chat-input" placeholder="Ask me anything..."></textarea>
+                <button id="send-btn" class="send-button">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
